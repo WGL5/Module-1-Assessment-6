@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="style.css">     
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+    <a href="index.html"><img src="images/My_project-yes-removebg-preview.png" width="155px"></a> 
+    <div class="logo">
+        </div>
+                
+
+        <nav>
+            <ul>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><img src="images/cart.png" width="30px" height="30px"><li/>
+
+            </ul>
+            </nav>
+            </div>
+            </div>
+    
+    <!-------- Single Product Details ---------> 
+    
+    <div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+        <img src="images/gallery-1.jpg" width="100%" id="product-img">
+           
+            <div class="small-img-row">
+            
+            <div class="small-img-col">
+                <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                </div>            <div class="small-img-col" >
+                <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                </div>            <div class="small-img-col">
+                <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                </div>            <div class="small-img-col">
+                <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                </div>
+            
+            </div>
+            
+            
+            
+        </div>
+        <div class="col-2">
+        <p>Home / T-Shirt</p>
+            <h1>Red Printed T-Shirt by Steven</h1>
+            <h4>R700.00</h4><h6>30 Units left</h6>
+            <select>
+                <option>Select Size</option> 
+                <option>Small</option>
+                <option>medium</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>Dylan Size</option>
+            </select>
+            <input type="number" value="1" min="1">
+            <a href="" class="btn">Add To Cart</a> 
+            
+            <h3>Product Details</h3> 
+            <br>
+            <p>Get the hottest look of summer this winter by designer Steven.D.Goofy 
+            Mens Active Tshirt pair this with shorts and enjoy your morning jog</p>
+        </div>
+        
+        </div>
+    </div>
+            
+    
+    <div class="categories">
+    <div class="row">
+        <div class="col-3">
+        <imag src="images/category-1.jpg"></imag>
+        </div>
+        <div class="col-3">
+        <imag src="images/category-2.jpg"></imag>
+
+        </div>
+        <div class="col-3">
+        <imag src="images/category-3.jpg"></imag>
+
+        </div>
+        
+        </div>
+    
+    </div>
+    
+    <div class="small-container">
+        
+
+        <div class="row">
+            <div class="col-4">
+            <a href="Product-details.html"><img src="images/product-1.jpg"></a>
+                <h4>Red Printed T-shirt</h4>
+                <p>R700.00</p>
+            </div>            <div class="col-4">
+            <a href="Product-details2.html"><img src="images/product-2.jpg"></a>
+                <h4>Jogging shoes Max Airs</h4>
+                <p>R1400.00</p>
+            </div>            <div class="col-4">
+            <a href="Product-details3.html"><img src="images/product-3.jpg"></a>
+                <h4>Low Cut Wadiyas</h4>
+                <p>R600.00</p>
+            </div>            <div class="col-4">
+            <a href="Product-details4.html"><img src="images/product-4.jpg"></a>
+                <h4>Puma Printed T-shirt</h4>
+                <p>R900.00</p>
+            </div>
+      
+        
+        </div>
+             
+    </div>
+    
+     <!-------- footer--------->
+    <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+            <h3>Download Our App</h3>
+                <p>Download App For Android And IOS Mobile Phones</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                
+                </div>
+            
+            </div>
+            
+            <div class="footer-col-2">
+            <img src="images/My_project-yes-removebg-preview.png">
+                <p>Our Purpose Is To Provide And Cater To Everyones Own Unique Style Your Choice Your Way</p>
+            
+            </div>
+            <div class="footer-col-3">
+            <h3>Useful Links</h3>
+                <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+                
+                </ul>
+            
+            </div>
+                        <div class="footer-col-4">
+            <h3>Follow Us</h3>
+                <ul>
+                <li>Facebook</li>
+                <li>Instagrame</li>
+                <li>Twitter</li>
+                <li>TikTok</li>
+                
+                </ul>
+            
+            </div>
+            
+        
+        </div>
+        
+        </div>
+    <hr>
+        <p class="copyright">Copyright 2022 - WESLEYGAVIN5</p>
+    </div>
+    <div class="footer">
+    
+    </div>
+    <!----------js for product gallery--------->
+    <script>
+    
+    var productimg = document.getElementById("product-img");
+    var smallimg = document.getElementsByClassName("small-img");
+        
+        smallimg[0].onclick = function()
+        {
+            productimg.src = smallimg[0].src;
+        } 
+        smallimg[1].onclick = function()
+        {
+            productimg.src = smallimg[1].src;
+        } 
+        smallimg[2].onclick = function()
+        {
+            productimg.src = smallimg[2].src;
+        } 
+        smallimg[3].onclick = function()
+        {
+            productimg.src = smallimg[3].src;
+        }
+    
+    </script>
+    
+    
+</body>
+</html>
